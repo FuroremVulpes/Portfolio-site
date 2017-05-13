@@ -18,6 +18,15 @@
         padding: 25px;
     }
 
+    hr.style14 {
+      border: 0;
+      height: 1px;
+      background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+      background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+      background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+      background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    }
+
     /* 1. Intro
     --------------------*/
     .tm-section-intro {
@@ -93,6 +102,7 @@
     body {
           font: 400 15px Lato, sans-serif;
           line-height: 1.8;
+          background-color: #f0f8ff;
     }
     h2 {
           font-size: 24px;
@@ -165,6 +175,78 @@
 
     .form-control:focus { border-color: #1768A9; }
 
+    .tm-section {
+    	padding-top: 5%;
+    	padding-bottom: 5%;
+    	overflow: auto;
+    }
+    .tm-container {
+    	max-width: 1200px;
+    	margin: 0 auto;
+    }
+
+    .tm-container-wide { max-width: 1230px; }
+
+    .tm-news-item {
+    	margin: 0 auto 5% auto;
+    	display: -webkit-flex;
+    	display: -ms-flexbox;
+    	display: flex;
+    	padding-left: 15px;
+    	padding-right: 15px;
+    }
+
+    .tm-news-item:last-child { margin-bottom: 0; }
+
+    .tm-news-item-img {	margin: 0 auto; }
+
+    .tm-news-item-img-container { padding: 0; }
+
+    .tm-news-container {
+    	background-color: white;
+    	display: -webkit-flex;
+    	display: -ms-flexbox;
+    	display: flex;
+    	-webkit-flex-direction: column;
+    	    -ms-flex-direction: column;
+    	        flex-direction: column;
+    	-webkit-justify-content: center;
+    	    -ms-flex-pack: center;
+    	        justify-content: center;
+    	padding-left: 3%;
+    	padding-right: 3%;
+    }
+
+    .tm-news-title {
+    	font-weight: 300;
+    	margin-bottom: 30px;
+    }
+
+    .tm-news-text {	line-height: 1.8; }
+
+    .tm-news-link {
+        margin-right: 0;
+        margin-left: auto;
+        -ms-flex-item-align: end;
+            -webkit-align-self: flex-end;
+                align-self: flex-end;
+    }
+
+    .tm-light-blue-bordered-btn {
+    	background: transparent;
+        border: 2px solid #4EA7FF;
+        color: #4EA7FF;
+    }
+
+    .tm-light-blue-bordered-btn:hover,
+    .tm-light-blue-bordered-btn:focus {
+        background: #4EA7FF;
+        color: white;
+      }
+
+      .flex-order-1 { -webkit-order: 1; -ms-flex-order: 1; order: 1; }
+      .flex-order-2 { -webkit-order: 2; -ms-flex-order: 2; order: 2; }
+
     @keyframes slide {
       0% {
         opacity: 0;
@@ -216,7 +298,7 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home">HOME</a></li>
+          <li><a href="#myPage">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#portfolio">PORTFOLIO</a></li>
           <li><a href="#contact">CONTACT</a></li>
@@ -232,80 +314,60 @@
         <img src="https://scontent.xx.fbcdn.net/v/t1.0-1/p160x160/12111931_1017356708302393_8781197200750793250_n.jpg?oh=63ae644314643311984b903c3297f397&oe=59BA43FC" alt="Logo" class="tm-logo" style="border-radius: 25px;">
         <h3 class="tm-section-intro-title">Few Words About Me</h3><br>
         <p class="tm-section-intro-text">Enthusiastic programming novice. Learning Python, Web and other stuff. In the meantime Korean:)</p>
-        <a href="#about" class="tm-btn-white-big">Know More</a>
+        <!--<a href="#about" class="tm-btn-white-big">Know More</a>-->
       </div>
     </div>
   </div>
+<br><br>
 
   <div class="row">
-    <div id="about" class="col-sm-12 container text-center">
-        <br><br><h2>So...</h2><br>
+    <div id="about" class="container text-center col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+        <h2>So...</h2><br>
         <p>My first project in IT was a high school fan site for Ville Valo from H.I.M. It was pure HTML and thought "I like programming".
           After that I graduated as System Analytic and worked for almost 2 years as a QA Engineer in the car plate recognition application ptoject in one IT company
           in Kiev. It happened that I started learning German and Korean. And after some time I ended again here with HTML, CSS, JavaScript and "I like programming".
           On my road I've grew skills in Python, SQL, Quality Assurance. Happened to code on Java, for Android, bit of C/C++.</p>
     </div>
   </div>
+<br><br>
+<hr class="style14">
 
   <div id="portfolio" class="row text-center padding-container">
     <h2>Portfolio<span class="glyphicon glyphicon-pencil"></h2><br>
     <h4>What have I created</h4>
     <div class="row">
-      <div class="col-sm-3">
-        ​<div class="thumbnail">
-          <p>FreeCodeCamp tribute page for Henry Ford.</p>
-          <a href="https://codepen.io/FuroremVulpes/full/zvgGdK"><img src="http://i67.tinypic.com/2wrg201.jpg" class="img-responsive" style="width:100%" alt="Tribute Page: Henry Ford"></a>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        ​<div class="thumbnail">
-          <p>Some text..</p>
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-      </div>
-      <div class="col-sm-3">
-        ​<div class="thumbnail">
-          <p>Some text..</p>
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-      </div>
-      <div class="col-sm-3">
-        ​<div class="thumbnail">
-          <p>Some text..</p>
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-      </div>
-    </div>
-  </div><br>
+        <div class="tm-section">
+            <div class="tm-container tm-container-wide">
+                <div class="tm-news-item">
 
-  <div class="row bg-3 text-center padding-container">
-    <div class="row">
-      <div class="col-sm-3">
-        ​<div class="thumbnail">
-          <p>Some text..</p>
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-item-img-container">
+                        <img src="http://i67.tinypic.com/2wrg201.jpg" alt="Tribute Page: Henry Ford" class="img-fluid tm-news-item-img" style="width:100%">
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-container">
+                        <h2 class="tm-news-title" style="color: #666666;">Tribute Page: Henry Ford</h2>
+                        <p class="tm-news-text">Tribute page for Henry Ford. Task from FreeCodeCamp.<br>HTML, Bootstrap.</p>
+                        <a href="https://codepen.io/FuroremVulpes/full/zvgGdK" class="btn tm-light-blue-bordered-btn tm-news-link">Details</a>
+                    </div>
+                </div>
+
+                <div class="tm-news-item">
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 flex-order-2 tm-news-item-img-container">
+                        <img src="img/tm-600x300-02.jpg" alt="Image" class="img-fluid tm-news-item-img">
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-container flex-order-1">
+                        <h2 class="tm-news-title dark-gray-text">Nulla molestie euismod</h2>
+                        <p class="tm-news-text">You may download, modify and use this template as you wish. Lumino HTML5 template is a fully responsive mobile ready for any kind of website.</p>
+                        <a href="#" class="btn tm-light-blue-bordered-btn tm-news-link">Detail</a>
+                    </div>
+                </div>
+              </div>
+          </div>
       </div>
-      <div class="col-sm-3">
-        ​<div class="thumbnail">
-          <p>Some text..</p>
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-      </div>
-      <div class="col-sm-3">
-        ​<div class="thumbnail">
-          <p>Some text..</p>
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-      </div>
-      <div class="col-sm-3">
-        ​<div class="thumbnail">
-          <p>Some text..</p>
-          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        </div>
-      </div>
-    </div>
-  </div><br><br>
+
+<hr class="style14">
 
   <div id="contact" class="row padding-container">
     <h2 class="text-center">Keep in touch</h2>
